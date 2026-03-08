@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const app = express();
 const cors = require("cors");
@@ -6,7 +7,7 @@ const mongoose = require("mongoose");
 const cookieParser = require("cookie-parser");
 const SSLCommerzPayment = require("sslcommerz-lts");
 const connectDB = require("./config/db");
-require("dotenv").config();
+
 const path = require("path");
 PORT = 5001;
 
