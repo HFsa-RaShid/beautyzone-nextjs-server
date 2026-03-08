@@ -39,8 +39,8 @@ app.get("/", (req, res) => {
   res.send("Beauty Zone API is running...");
 });
 
-// module.exports = app;
+module.exports = app;
 
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
-});
+// app.listen(PORT, () => {
+//   console.log(`Server is running on http://localhost:${PORT}`);
+// });
