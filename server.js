@@ -8,7 +8,7 @@ const SSLCommerzPayment = require("sslcommerz-lts");
 const connectDB = require("./config/db");
 require("dotenv").config();
 const path = require("path");
-PORT = 5001
+PORT = 5001;
 
 connectDB();
 
@@ -18,7 +18,7 @@ app.use(
       // "http://127.0.0.1:5500",
       "http://localhost:3000",
       "http://localhost:5173",
-      "https://beautyzone-react-client.vercel.app",
+      "http://localhost:3000",
     ],
     credentials: true,
   }),
@@ -40,7 +40,6 @@ app.get("/", (req, res) => {
 });
 
 // module.exports = app;
-
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
